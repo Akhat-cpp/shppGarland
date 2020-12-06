@@ -1,0 +1,110 @@
+*
+{
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+.canvas
+{
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
+/**
+{
+	margin: 0;
+}
+body
+{
+	background-color: black;
+}
+.bgi
+{
+	width: 100%; 
+	height: 100vh;
+	background-image: url(2.png);
+	background-size: 100% 100vh;
+	color: white;
+}
+.blink
+{  
+/*	animation: blink 400ms alternate infinite;
+*/	/*text-shadow: white 0 0 100px;
+}
+ */
+/*@keyframes blink
+{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}*/
+
+/*.blink0
+{
+	padding-top: 25%;
+	padding-left: 9.765625%;
+	position: absolute;
+	z-index: 1;
+	width: 80px;
+	height: 80px;
+}
+.blink1
+{
+	padding-top: 19.986979%;
+	padding-left: 22.200520%;
+	position: absolute;
+	z-index: 2;
+	width: 80px;
+	height: 80px;
+}
+.blink2
+{
+	padding-top: 12.82552%;
+	padding-left: 34.375%;
+	position: absolute;
+	z-index: 3;
+	width: 80px;
+	height: 80px;
+}
+.blink3
+{
+	padding-top: 11.197916%;
+	padding-left: 46.614583%;
+	position: absolute;
+	z-index: 4;
+	width: 80px;
+	height: 80px;
+}
+.blink4
+{
+	padding-top: 8.52864583%;
+	padding-left: 62.6302083%;
+	position: absolute;
+	z-index: 5;
+	width: 80px;
+	height: 80px;
+}
+.blink5
+{
+	padding-top: 15.104166%;
+	padding-left: 75.6510416%;
+	position: absolute;
+	z-index: 6;
+	width: 80px;
+	height: 80px;
+}
+.blink6
+{
+	padding-top: 15.10416%;
+	padding-left: 84.375%;
+	position: absolute;
+	z-index: 7;
+	width: 80px;
+	height: 80px;
+}*/
