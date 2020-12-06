@@ -6,6 +6,9 @@ img.src = '2.png';
 let width = 1536;
 let height = 788;
 
+//autoplay
+let tempaudioautoplay = true;
+
 let timeout = 150;
 let mode = 0;
 let counter = -1;
@@ -108,6 +111,7 @@ addEventListener("keydown", function(e)
 	if(e.key == 'ArrowRight') nextMode(true);
 	if(e.key == 'ArrowLeft') nextMode(false);
 	if(e.key == ' ') modal();
+	if(tempaudioautoplay) soundClickAutoplay();
 });
 
 function speed(upOrDown)
@@ -153,4 +157,13 @@ function modal()
 {
 	document.getElementById('modal1').classList.add('unvisivle');
 	document.getElementById('canvas').classList.remove('unvisible');
+}
+
+//autoplay
+function soundClickAutoplay() {
+	tempaudioautoplay = false;
+	let audio = new Audio();
+	audio.src = 'Trap City - Ho Ho Ho.mp3';
+	audio.autoplay = true;
+	setTimeout(soundClickAutoplay, 206000);
 }
