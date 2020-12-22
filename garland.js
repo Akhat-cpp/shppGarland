@@ -115,6 +115,7 @@ function blinkAll(color, timeout, counter, mode)//after change mode counter == -
 	if(!horizontal)
 	{
 		document.getElementById('canvas').height = 667; document.getElementById('canvas').width = 375;
+		// document.getElementById('canvas').style.height = 667; document.getElementById('canvas').width = 375;
 
 		(tempModal) ? document.getElementById('modal1').innerHTML = '<div class="modalChild1"><div class="modalChild2"><div class="modalChild3" onclick="modal()"><p>Для следующей анимации: →, для предыдущей: ←. Всего 5 режимов. Пишите добавлю еще). Чтоб пропустить этот экран: <span>просто нажмите на него</span>.</p><br/><p>For the next animation: →, for the previous: ←. There are 5 modes in total. Write to add more). Skip This Screen: <span>just click for him</span>.</p></div></div></div>' : tempModal = tempModal;
 		document.getElementById('canvas').classList.add('canvas-pixelated');
