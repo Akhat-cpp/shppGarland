@@ -41,14 +41,17 @@ function blinkAll(color, timeout, counter, mode)//after change mode counter == -
 	{
 		document.getElementById('canvas').width = width; document.getElementById('canvas').height = height;
 
+		(tempModal) ? document.getElementById('modal1').innerHTML = '<div id="modal1" class="modal1"><div class="modalChild1"><div class="modalChild2"><div class="modalChild3" onclick="modal()"><p>Для ускорения анимации нажмите: ↑, для замедления: ↓, для следующей анимации: →, для предыдущей: ←. Всего 5 режимов. Пишите добавлю еще). Пропустить этот экран: <span>пробел</span>.</p><br/><p>To speed up the animation, press: ↑, to slow down: ↓, for the next animation: →, for the previous: ←. There are 5 modes in total. Write to add more). Skip This Screen: <span>Space</span>.</p></div></div></div></div>' : tempModal = tempModal;
+		document.getElementById('canvas').classList.remove('canvas-pixelated');
+
 		ctx.rect(0, 0, width, height);
 	    ctx.drawImage(img, 0, 0, width, height);
 
 
 	    blink('rgba(255, 255, 255, 1)', 193, 137, 7.5, 0, 2 * Math.PI, true, 55);
 	    blink('rgba(255, 255, 255, 1)', 1306, 127, 7.5, 0, 2 * Math.PI, true, 55);
-	    blink('rgba(255, 255, 255, 1)', 753, 650.5, 7.5, 0, 2 * Math.PI, true, 55);
-	    blink('rgba(255, 255, 255, 1)', 1243, 531.5, 7.5, 0, 2 * Math.PI, true, 55);
+	    blink('rgba(255, 255, 255, 1)', 753, 653, 7.5, 0, 2 * Math.PI, true, 55);
+	    blink('rgba(255, 255, 255, 1)', 1243, 533, 7.5, 0, 2 * Math.PI, true, 55);
 
 	    if(mode == 0)
 	    {
@@ -114,6 +117,7 @@ function blinkAll(color, timeout, counter, mode)//after change mode counter == -
 		document.getElementById('canvas').height = 667; document.getElementById('canvas').width = 375;
 
 		(tempModal) ? document.getElementById('modal1').innerHTML = '<div id="modal1" class="modal1"><div class="modalChild1"><div class="modalChild2"><div class="modalChild3" onclick="modal()"><p>Для следующей анимации: →, для предыдущей: ←. Всего 5 режимов. Пишите добавлю еще). Чтоб пропустить этот экран: <span>просто нажмите на него</span>.</p><br/><p>For the next animation: →, for the previous: ←. There are 5 modes in total. Write to add more). Skip This Screen: <span>just click for him</span>.</p></div></div></div></div>' : tempModal = tempModal;
+		document.getElementById('canvas').classList.add('canvas-pixelated');
 
 		ctx.rect(0, 0, 375, 667);
 	    ctx.drawImage(img2, 0, 0, 375, 667);
