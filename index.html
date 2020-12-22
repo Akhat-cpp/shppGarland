@@ -9,20 +9,13 @@
 </head>
 <body>
 
-	<canvas class="canvas" id="canvas" width="1536" height="788"></canvas>
+	<canvas id="canvas" class="canvas unvisible" width="1536" height="792"></canvas>
+	<div id="controlsM"><div class="controlsMChild"><div id="controlsMLeft" onclick="nextMode(0)"></div><div id="controlsMRight" onclick="nextMode(1)"></div></div></div>
+	<div id="modal1" class="modal1"><div class="modalChild1"><div class="modalChild2"><div class="modalChild3" onclick="modal()"><p>Для ускорения анимации нажмите: ↑, для замедления: ↓, для следующей анимации: →, для предыдущей: ←. Всего 5 режимов. Пишите добавлю еще). Пропустить этот экран: <span>пробел</span>.</p><br/><p>To speed up the animation, press: ↑, to slow down: ↓, for the next animation: →, for the previous: ←. There are 5 modes in total. Write to add more). Skip This Screen: <span>Space</span>.</p></div></div></div></div>
 
-<!-- 	<button style="position: absolute; z-index: 1;" onclick="coord(document.getElementById('blink0'), document.getElementById('body').getBoundingClientRect().width, document.getElementById('blink0').getBoundingClientRect().bottom, document.body.getBoundingClientRect().height)">высотат</button>
- -->	
-	<!-- <div class="bgi">
-		<img src="round.png" class="blink blink0" id="blink0">
-	 	<img src="round.png" class="blink blink1" id="blink1">
-	 	<img src="round.png" class="blink blink2" id="blink2">
-	 	<img src="round.png" class="blink blink3" id="blink3">
-	 	<img src="round.png" class="blink blink4" id="blink4">
-	 	<img src="round.png" class="blink blink5" id="blink5">
-	 	<img src="round.png" class="blink blink6" id="blink6">
-	</div>
- -->
+	<audio src="Trap City - Ho Ho Ho.mp3" class="unvisible" autoplay="autoplay"></audio>
+
+	
 	<script src="garland.js"></script>
 </body>
 </margin
